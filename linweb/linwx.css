@@ -1,2 +1,11 @@
 /*linwx.html>>css*/
 body, html{background-color: rgb(136, 136, 136);width:100%;}
+
+div.sticky {
+
+    position: static;
+    top: 0;
+    padding: 50px;
+    background-color: #8a8a8a;
+    border: 2px solid #4CAF50;
+  }
