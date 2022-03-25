@@ -11,6 +11,7 @@ body, html{background-color: rgb(136, 136, 136);width:100%;}
   }
 
   .myAvatar {
-	width: 100px;
+	width: 10px;
 	border-radius: 50%;
+    border: 1px solid rgba(255,0,0,1.00);
   }
