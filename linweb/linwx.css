@@ -2,6 +2,7 @@
 body, html{background-color: rgb(136, 136, 136);width:100%;}
 
 .topsticky {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     padding: 50px;
