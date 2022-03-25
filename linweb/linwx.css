@@ -5,7 +5,12 @@ body, html{background-color: rgb(136, 136, 136);width:100%;}
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding: 50px;
+    padding: 10px;
     background-color: #8a8a8a;
-    border: 2px solid #4CAF50;
+    border: none;
+  }
+
+  .myAvatar {
+	width: 100px;
+	border-radius: 50%;
   }
