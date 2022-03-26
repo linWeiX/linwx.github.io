@@ -1,17 +1,51 @@
 /*linwx.html>>css*/
-body, html{background-color: rgb(136, 136, 136);width:100%;}
+ body, html{background-color: rgb(136, 136, 136);width:100%;margin: 0; padding: 0;}
 
-.topsticky {
+/*.topsticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding: 10px;
-    background-color: #8a8a8a;
+    padding: 5px;
+    background-color: #494949;
     border: none;
+  }*/
+
+/*首頁頂圖片*/
+  .frontpage{
+    vertical-align:top;/*消除與div間細*/
+    background-size: cover;
+    margin: auto;
+    width: 100%;
   }
 
+  .topdiv{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(73, 73, 73);
+    overflow: hidden;
+  }
+  .topdiv a{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px 15px;
+    text-decoration: none;/*字體特效*/
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+  }
+  .ahome{
+    float: left;
+  }
+  .about{
+    float: right;
+  }
+  .topdiv a:hover{
+    background-color: rgb(138, 138, 138);
+  }
+  
+/*原頭貼置頂*/
   .myAvatar {
-	width: 10px;
-	border-radius: 50%;
-    border: 1px solid rgba(255,0,0,1.00);
+	width: 80px;
+	/*border-radius: 50%;*/
   }
