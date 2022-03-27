@@ -1,64 +1,73 @@
 /*linwx.html>>css*/
- body, html{background-color: rgb(136, 136, 136);width:100%;margin: 0; padding: 0;}
-
+/*google字型*/
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/*包含整個網頁*/
+ body, html{
+     font-family: 'cwTeXYen', sans-serif;/*使用字型*/
+     background-color: rgb(136, 136, 136);
+     width:100%;
+     margin: 0; padding: 0;
+     box-sizing: border-box;
+    }
 /*首頁頂圖片*/
   .frontpage{
-    vertical-align:top;/*消除與div間細*/
-    position: relative;
-    background-size: cover;
-    margin: auto;
-    width: 100%;
-    z-index: 1;
+     vertical-align:top;/*消除與div間細*/
+     position: relative;
+     background-size: cover;
+     margin: auto;
+     width: 100%;
+     z-index: 1;
   }
   .frontlink{
-    position: absolute;
-    margin: auto;
-    max-width: 5%;
-    max-height: 5%;
-    z-index: 2;
+     left: 82vw;
+     top: 11.5vw; 
+     position: absolute;
+     z-index: 2;
   }
-  .fb{
-    right: 1vh;
-    top: 11.5vw;  
+  .frontlink img{
+     max-width: 30%;
+     max-height: 30%;
   }
-  .ig{
-    right: 6.5vh;
-    top: 11.5vw;
-  }
-  .yt{
-    right: 12vh;
-    top: 11.5vw;
-  }
-
 /*永遠置頂的條條*/
   .topdiv{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    background-color: rgb(73, 73, 73);
-    overflow: hidden;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0px;
+     background-color: rgb(73, 73, 73, 0.5);
+     overflow: hidden;
   }
   .topdiv a{
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 2px 15px;
-    text-decoration: none;/*字體特效*/
-    font-size: 15px;
-    border-bottom: 2px solid transparent;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 3px 15px;
+     text-decoration: none;/*字體特效*/
+     font-size: 1rem;
+     border-bottom: 2px solid transparent;
   }
   .ahome{
-    float: left;
+     float: left;
   }
   .about{
-    float: right;
+     float: right;
   }
   .topdiv a:hover{
-    background-color: rgb(138, 138, 138);
+     background-color: rgb(138, 138, 138);
   }
-  
-/*原頭貼置頂*/
-  .myAvatar {
-	width: 80px;
-	/*border-radius: 50%;*/
+/*關於我*/
+  .aboutme{
+     background-color: rgba(0, 0, 0, 0.5);
+     position: relative;
+     margin:10px auto;
+     width: 550px;
+     height: 350px;
+  }
+  .aboutme img{
+     position: absolute;
+     left: 55vw;
+     top: 11.5vw; 
+     opacity: 0.5; /*透明度0.5*/
+     filter: alpha(opacity=50);
+     max-width: 90%;
+     max-height: 90%;
   }
