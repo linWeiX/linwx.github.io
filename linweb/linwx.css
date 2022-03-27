@@ -19,14 +19,14 @@
      z-index: 1;
   }
   .frontlink{
-     left: 82vw;
+     left: 75vw;
      top: 11.5vw; 
      position: absolute;
      z-index: 2;
   }
   .frontlink img{
-     max-width: 30%;
-     max-height: 30%;
+     max-width: 20%;
+     max-height: 20%;
   }
 /*永遠置頂的條條*/
   .topdiv{
