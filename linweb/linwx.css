@@ -38,7 +38,7 @@
   }
   .topdiv a{
      display: block;
-     color: #f2f2f2;
+     color: #ffffff;
      text-align: center;
      padding: 3px 15px;
      text-decoration: none;/*字體特效*/
@@ -64,10 +64,14 @@
   }
   .aboutme img{
      position: absolute;
-     left: 55vw;
-     top: 11.5vw; 
-     opacity: 0.5; /*透明度0.5*/
+     left: 17.5em;
+     top: 3.6em; 
+     /*opacity: 0.9; 透明度*/
      filter: alpha(opacity=50);
-     max-width: 90%;
-     max-height: 90%;
+     max-width: 120%;
+     max-height: 120%;
+  }
+  .aboutme table{
+      color: rgb(255, 255, 255);
+      text-align: center;
   }
