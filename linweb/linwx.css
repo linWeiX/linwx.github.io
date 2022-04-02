@@ -59,7 +59,8 @@
      background-color: rgba(0, 0, 0, 0.5);
      position: relative;
      margin:10px auto;
-     width: 590px;
+     float: left;
+     width: 45%;
      height: 350px;
      background-image:url(photo/nicebg.JPG);
   }
@@ -73,14 +74,37 @@
      max-height: 95%;
   }
   .aboutme table{
-      position: absolute;
-      left: 2em;
-      top: 1.5em; 
-      color: rgb(255, 255, 255);
-      text-align: left;
-      font-size: 120%;
+     position: absolute;
+     width: 80%;
+     left: 2em;
+     top: 1.5em; 
+     color: rgb(255, 255, 255);
+     text-align: left;
+     font-size: 120%;
 
   }
+/*簡介*/
+  .introduction{
+     position: relative;
+     background-color: rgba(0, 0, 0, 0.5);
+     margin:10px auto;
+     float: right;
+     width: 45%;
+     height: 350px;
+  }
+  .introduction table{
+     position: absolute;
+     color: rgb(255, 255, 255);
+     text-align: center;
+     font-size: 120%;
+     left: 1em;
+     width: 540px;
+     height: 300px;
+  }
+  @media  only screen and (max-width: 620px){
+   .aboutme ,.introduction{
+      width: 100%;
+   }
 /*我大頁底*/
   .foot{
       background-color: rgba(0, 0, 0, 0.5);
@@ -96,3 +120,5 @@
       text-align: center;
       font-size: 1em;
   }
+
+ }
