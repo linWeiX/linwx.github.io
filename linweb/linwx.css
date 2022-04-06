@@ -1,124 +1,173 @@
 /*linwx.html>>css*/
+
+
 /*google字型*/
+
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
 /*包含整個網頁*/
- body, html{
-     font-family: 'cwTeXYen', sans-serif;/*使用字型*/
-     background-color: rgb(136, 136, 136);
-     width:100%;
-     margin: 0; padding: 0;
-     box-sizing: border-box;
-    }
+
+body,
+html {
+    font-family: 'cwTeXYen', sans-serif;
+    /*使用字型*/
+    background-color: rgb(136, 136, 136);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /*首頁頂圖片*/
-  .frontpage{
-     vertical-align:top;/*消除與div間細*/
-     position: relative;
-     background-size: cover;
-     margin: auto;
-     width: 100%;
-     z-index: 1;
-  }
-  .frontlink{
-     left: 75vw;
-     top: 11.5vw; 
-     position: absolute;
-     z-index: 2;
-  }
-  .frontlink img{
-     max-width: 20%;
-     max-height: 20%;
-  }
+
+.frontpage {
+    vertical-align: top;
+    /*消除與div間細*/
+    position: relative;
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.frontlink {
+    left: 75vw;
+    top: 11.5vw;
+    position: absolute;
+    z-index: 2;
+}
+
+.frontlink img {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+
 /*永遠置頂的條條*/
-  .topdiv{
-     position: -webkit-sticky;
-     position: sticky;
-     top: 0px;
-     background-color: rgb(0, 0, 0, 0.5);
-     overflow: hidden;
-  }
-  .topdiv a{
-     display: block;
-     color: #ffffff;
-     text-align: center;
-     padding: 3px 15px;
-     text-decoration: none;/*字體特效*/
-     font-size: 100%;
-     border-bottom: 0rem solid transparent;
-  }
-  .ahome{
-     float: left;
-  }
-  .about{
-     float: right;
-  }
-  .topdiv a:hover{
-     background-color: rgb(136, 136, 136);
-  }
+
+.topdiv {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.topdiv a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 3px 15px;
+    text-decoration: none;
+    /*字體特效*/
+    font-size: 100%;
+    border-bottom: 0rem solid transparent;
+}
+
+.ahome {
+    float: left;
+}
+
+.about {
+    float: right;
+}
+
+.topdiv a:hover {
+    background-color: rgb(136, 136, 136);
+}
+
+.body {
+    /* position: relative; */
+    width: 100%;
+}
+
+
+/* .inbody {
+    position: absolute;
+} */
+
+
 /*關於我*/
-  .aboutme{
-     background-color: rgba(0, 0, 0, 0.5);
-     position: relative;
-     margin:10px auto;
-     float: left;
-     width: 45%;
-     height: 350px;
-     background-image:url(photo/nicebg.JPG);
-  }
-  .aboutme img{
-     position: absolute;
-     left: 25.5em;
-     top: 6.8em; 
-     /*opacity: 0.9; 透明度*/
-     filter: alpha(opacity=50);
-     max-width: 95%;
-     max-height: 95%;
-  }
-  .aboutme table{
-     position: absolute;
-     width: 80%;
-     left: 2em;
-     top: 1.5em; 
-     color: rgb(255, 255, 255);
-     text-align: left;
-     font-size: 120%;
 
-  }
+.aboutme {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 10px auto;
+    /* float: left; */
+    width: 45%;
+    height: 350px;
+    background-image: url(photo/nicebg.JPG);
+}
+
+.aboutme img {
+    position: absolute;
+    left: 25.5em;
+    top: 6.8em;
+    /*opacity: 0.9; 透明度*/
+    filter: alpha(opacity=50);
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.aboutme table {
+    position: absolute;
+    width: 80%;
+    left: 2em;
+    top: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 120%;
+}
+
+
 /*簡介*/
-  .introduction{
-     position: relative;
-     background-color: rgba(0, 0, 0, 0.5);
-     margin:10px auto;
-     float: right;
-     width: 45%;
-     height: 350px;
-  }
-  .introduction table{
-     position: absolute;
-     color: rgb(255, 255, 255);
-     text-align: center;
-     font-size: 120%;
-     left: 1em;
-     width: 540px;
-     height: 300px;
-  }
-  @media  only screen and (max-width: 620px){
-   .aboutme ,.introduction{
-      width: 100%;
-   }
-/*我大頁底*/
-  .foot{
-      background-color: rgba(0, 0, 0, 0.5);
-      margin: auto;
-      width: 100%;
-  }
-  .foot img{
-      max-width: 2em;
-      max-height: 2em;
-  }
-  .foot div{
-      color: rgb(255, 255, 255);
-      text-align: center;
-      font-size: 1em;
-  }
 
- }
+.introduction {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    float: center;
+    width: 45%;
+    height: 350px;
+}
+
+.introduction table {
+    position: absolute;
+    left: 2em;
+    top: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 300px;
+}
+
+
+/*我大頁底*/
+
+.foot {
+    /* position: relative; */
+    background-size: cover;
+    /* margin-top: -50; */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 6rem;
+    width: 100%;
+}
+
+.foot img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+@media only screen and (max-width: 620px) {
+    .aboutme,
+    .introduction {
+        width: 100%;
+    }
+}
