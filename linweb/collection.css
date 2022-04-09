@@ -20,31 +20,6 @@ html {
 }
 
 
-/*首頁頂圖片*/
-
-.frontpage {
-    vertical-align: top;
-    /*消除與div間細*/
-    position: relative;
-    background-size: cover;
-    margin: auto;
-    width: 100%;
-    z-index: 1;
-}
-
-.frontlink {
-    left: 75vw;
-    top: 11.5vw;
-    position: absolute;
-    z-index: 2;
-}
-
-.frontlink img {
-    max-width: 20%;
-    max-height: 20%;
-}
-
-
 /*永遠置頂的條條*/
 
 .topdiv {
@@ -87,64 +62,6 @@ html {
 /* .inbody {
     position: absolute;
 } */
-
-
-/*關於我*/
-
-.aboutme {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    margin: 10px auto;
-    /* float: left; */
-    width: 45%;
-    height: 350px;
-    background-image: url(photo/nicebg.JPG);
-}
-
-.aboutme img {
-    position: absolute;
-    left: 25.5em;
-    top: 6.8em;
-    /*opacity: 0.9; 透明度*/
-    filter: alpha(opacity=50);
-    max-width: 95%;
-    max-height: 95%;
-}
-
-.aboutme table {
-    position: absolute;
-    width: 80%;
-    left: 2em;
-    top: 1.5em;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    font-size: 120%;
-}
-
-
-/*簡介*/
-
-.introduction {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 10px auto;
-    float: center;
-    width: 45%;
-    height: 350px;
-}
-
-.introduction table {
-    position: absolute;
-    left: 2em;
-    top: 1.5em;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 120%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 300px;
-}
 
 
 /*我大頁底*/
