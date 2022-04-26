@@ -1,0 +1,62 @@
+/* 使用google字型 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body, html {
+    font-family: 'cwTeXYen', sans-serif;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+
+.bodydiv {
+    width: 920px;
+    background-color: aliceblue;
+    margin: 0px auto; 
+    text-align: center;
+}
+.aboutphoto{
+    background-color: rgba(203, 186, 186, 0.5);
+    width: 40%;
+    height: 350px;
+    float: left;
+}
+.aboutme {
+    background-color: rgba(203, 186, 186, 0.5);
+    /* margin: 0px auto; */
+    width: 60%;
+    height: 350px;
+    float: left;
+}
+.skill{
+    background-color: rgba(203, 186, 186, 0.5);
+    width: 100%;
+}
+.introduction{
+    background-color: rgba(203, 186, 186, 0.5);
+    width: 100%;
+}
+
+/* 寬度在920~720px顯示內容 */
+@media only screen and (max-width: 920px) {
+    .bodydiv {
+        width: 100%;
+        background-color: rgb(23, 160, 32);
+        margin: auto;
+    }
+}
+
+/* 寬度在720px以下顯示內容 */
+@media only screen and (max-width: 720px) {
+    .bodydiv {
+        width: 100%;
+        background-color: rgb(159, 158, 88);
+        margin: auto;
+    }
+    .aboutphoto{
+        display: none;
+    }
+    .aboutme{
+        width: 100%;
+    }
+}
