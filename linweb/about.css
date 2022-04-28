@@ -4,44 +4,134 @@
 body, html {
     font-family: 'cwTeXYen', sans-serif;
     width: 100%;
-    background-color: black;
+    background-color: rgb(136, 136, 136);
+    color: rgb(255, 255, 255);
     margin: 0;
+}
+
+header {
+    vertical-align: top;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+header a {
+    display: block;
+    text-align: center;
+    padding: 3px 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /*字體特效*/
+    font-size: 100%;
+    border-bottom: 0rem solid transparent;
+}
+
+header a:hover {
+    background-color: rgb(136, 136, 136);
+}
+
+.ahome {
+    float: left;
+}
+
+.about01 {
+    float: right;
+}
+
+.about02 {
+    float: right;
+    background-color: rgb(136, 136, 136);
 }
 
 
 .bodydiv {
     width: 920px;
-    background-color: aliceblue;
-    margin: 0px auto; 
+    background-color: rgb(136, 136, 136);
+    margin: 0px auto;
     text-align: center;
 }
-.aboutphoto{
-    background-color: rgba(203, 186, 186, 0.5);
+
+.nothing {
+    width: 100%;
+    height: 50px;
+}
+
+.aboutphoto {
     width: 40%;
     height: 350px;
     float: left;
 }
+
+.frontlink{
+    z-index: 2;
+}
+
+.frontlink img {
+    max-width: 5%;
+    max-height: 5%;
+}
+
 .aboutme {
-    background-color: rgba(203, 186, 186, 0.5);
     /* margin: 0px auto; */
     width: 60%;
     height: 350px;
     float: left;
 }
-.skill{
-    background-color: rgba(203, 186, 186, 0.5);
+
+.aboutmb {
+    /* margin: 0px auto; */
+    display: none;
+    width: 60%;
+    height: 350px;
+    float: left;
+}
+
+.aboutme table {
+    width: 80%;
+    text-align: left;
+    font-size: 120%;
+}
+
+.skill {
     width: 100%;
 }
-.introduction{
-    background-color: rgba(203, 186, 186, 0.5);
+
+.introduction {
     width: 100%;
+}
+
+.introduction table {
+    text-align: center;
+    font-size: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 300px;
+}
+
+footer {
+    /* position: relative; */
+    /* background-size: cover; */
+    /* margin-top: -50; */
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 6rem;
+    width: 100%;
+}
+
+footer img {
+    max-width: 45%;
+    max-height: 45%;
 }
 
 /* 寬度在920~720px顯示內容 */
 @media only screen and (max-width: 920px) {
     .bodydiv {
         width: 100%;
-        background-color: rgb(23, 160, 32);
+        background-color: rgb(136, 136, 136);
         margin: auto;
     }
 }
@@ -50,13 +140,24 @@ body, html {
 @media only screen and (max-width: 720px) {
     .bodydiv {
         width: 100%;
-        background-color: rgb(159, 158, 88);
+        background-color: rgb(136, 136, 136);
         margin: auto;
     }
-    .aboutphoto{
+
+    .aboutphoto {
         display: none;
     }
-    .aboutme{
+
+    .aboutme {
+        display: none;
+    }
+
+    .aboutmb{
+        display: block;
         width: 100%;
+    }
+
+    .introduction{
+        display: none;
     }
 }
