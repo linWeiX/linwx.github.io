@@ -22,7 +22,8 @@ html {
 
 /*永遠置頂的條條*/
 
-.topdiv {
+header {
+    vertical-align: top;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -30,28 +31,35 @@ html {
     overflow: hidden;
 }
 
-.topdiv a {
+header a {
     display: block;
-    color: #ffffff;
     text-align: center;
     padding: 3px 15px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     /*字體特效*/
     font-size: 100%;
     border-bottom: 0rem solid transparent;
 }
 
+header a:hover {
+    background-color: rgb(136, 136, 136);
+}
+
 .ahome {
     float: left;
 }
 
-.about {
+.about01 {
     float: right;
 }
 
-.topdiv a:hover {
+.about02 {
+    float: right;
     background-color: rgb(136, 136, 136);
 }
+
+
 
 .body {
     position: relative;
