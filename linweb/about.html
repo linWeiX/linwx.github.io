@@ -7,6 +7,35 @@
     <meta name="viewport" charset="utf-8"
         content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title>林維新</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['HTML', 55.2],
+                ['CSS', 42.1],
+                ['Python', 1.9],
+                ['JavaScript', 0.8],
+            ]);
+
+
+
+            var options = {
+                title: '',
+                pieHole: 0.4,
+                backgroundColor: {
+                    fill: 'rgb(136, 136, 136)',
+                    //fillOpacity: 0.8
+                },                
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
 </head>
 
 <body>
@@ -21,8 +50,11 @@
         <hr>
 
         <div class="nothing"></div>
-        <div class="aboutphoto">
-            <h1>我是一張照片</h1>
+        <div class="aph01">
+            <img src="photo/niceme.png">
+        </div>
+        <div>
+            <img src="">
         </div>
         <div class="aboutme">
             <table>
@@ -85,8 +117,8 @@
             </table>
         </div>
 
-        <div>我是技能</div>
-
+        <div><h3>正在學習使用的語言佔比</h3></div>
+        <div id="donutchart" style="width: 500px; height: 350px;"></div>
 
         <div class="introduction">
             <table>

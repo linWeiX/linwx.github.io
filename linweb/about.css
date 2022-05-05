@@ -59,10 +59,14 @@ header a:hover {
     height: 50px;
 }
 
-.aboutphoto {
+.aph01{
     width: 40%;
     height: 350px;
     float: left;
+}
+.aph01 img{
+    width: 80%;
+    height: 100%; 
 }
 
 .frontlink {
@@ -150,7 +154,7 @@ footer img {
         margin: auto;
     }
 
-    .aboutphoto {
+    .aph01 {
         display: none;
     }
 
