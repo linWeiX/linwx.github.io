@@ -36,6 +36,10 @@ header a:hover {
 .ahome {
     float: left;
 }
+.ahome01{
+    float: left;
+    background-color: rgb(136, 136, 136);
+}
 
 .about01 {
     float: right;
