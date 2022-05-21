@@ -63,16 +63,18 @@ header a:hover {
     height: 50px;
 }
 
-.aph01{
+
+
+.aph01 img{
     width: 40%;
-    height: 350px;
+    height: 40%;
     float: left;
 }
-.aph01 img{
-    width: 80%;
-    height: 100%; 
+.aph02 img{
+    display: none;
+    width: 40%;
+    height: 40%;
 }
-
 .frontlink {
     z-index: 2;
 }
@@ -148,6 +150,9 @@ footer img {
         background-color: rgb(136, 136, 136);
         margin: auto;
     }
+    .aph02 {
+        display: none;
+    }
 }
 
 /* 寬度在720px以下顯示內容 */
@@ -162,6 +167,10 @@ footer img {
         display: none;
     }
 
+    .aph02 {
+        display: block;
+    }
+
     .aboutme {
         display: none;
     }
@@ -174,4 +183,8 @@ footer img {
     .introduction {
         display: none;
     }
+
+    
+    
+
 }
