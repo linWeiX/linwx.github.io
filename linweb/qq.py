@@ -9,3 +9,4 @@ elif(sum<90):{print("總分",sum,"B")}
 elif(100>=sum>90):{print("總分",sum,"A")}
 else:{print("錯誤囉")}
 """銘傳程式設計作業其中一題"""
+"幫同學做沒那麼開心過"
